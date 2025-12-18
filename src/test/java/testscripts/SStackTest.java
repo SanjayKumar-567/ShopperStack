@@ -9,10 +9,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
-public class Regression {
-
-	public static void main(String[] args) {
+public class SStackTest {
+           @Test
+	      public void setup() {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.shoppersstack.com/");
 		driver.manage().window().maximize();
@@ -58,6 +59,8 @@ public class Regression {
 	driver.findElement(By.xpath("//*[@id=\"root\"]/section[2]/div/section/div/div[2]/div[1]/div[2]/div/button")).click();
 
 driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/button[2]")).click();
+System.out.println("Jenkins + Maven demo test executed successfully");
+	      
 
 	}
 

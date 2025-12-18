@@ -60,7 +60,7 @@ public class SStackTest {
 
 driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/div[2]/button[2]")).click();
 System.out.println("Jenkins + Maven demo test executed successfully..........");
-	      System.out.println("all set");
+	      System.out.println("all set....");
 
 	}
 
